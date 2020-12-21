@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タスク新規登録</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+        <a href = "logout">logout</a>
+        <a href = "/mypage">mypage</a>
+        <a href = "/todo/top">TOP</a>
+    <h1>タスク新規登録</h1>
+    <form action="" method="post">
+        <div>
+            <label>リスト：</label>
+            <input type="text" name="listname" required/>
+        </div>
+        <div>
+            <label>コンテンツ：</label>
+            <input type="text" name="contentname" required/>
+        </div>
+        <div>
+            <label>期限：</label>
+            <input type="text" name="deadline"/>
+        </div>
+        <div>
+            <label>通知日：</label>
+            <input type="text" name="remind"/>
+        </div>
+        <div>
+            <label>優先度：</label>
+            <input type="text" name="priority"/>
+        </div>
+        <div>
+            <label>チーム：</label>
+            <input type="text" name="teamname"/>
+        </div>
+        <div>
+            <input type="submit" value="登録"/>
+        </div>
+        <div><%= error %></div>
+    </form>
+</body>
+</html>

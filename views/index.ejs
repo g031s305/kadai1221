@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <a href = "logout">logout</a>
+    <a href = "/mypage">mypage</a>
+    <a href = "/todo/top">TOP</a>
+    <h1><%= title %></h1>
+    <p>Hello <%= user.username %>, Welcome to <%= title %></p>
+    <input type="button" value="削除" onclick="location.href='./users/delete'"/>
+    <input type="button" value="更新" onclick="location.href='./users/update'"/>
+  </body>
+</html>

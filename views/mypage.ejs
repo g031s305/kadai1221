@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <a href = "logout">logout</a>
+    <a href = "/mypage">mypage</a>
+    <a href = "/todo/top">TOP</a>
+    <h1>マイページ</h1>
+    <ul>
+      <li>ようこそ <%= user.username %></li>
+      <li>所属チーム：</li>
+      <li>未完了のタスク n 件</li>
+    </ul>
+    <input type="button" value="チーム参加・脱退" onclick="location.href='./users/team'"/>
+    <input type="button" value="アカウント削除" onclick="location.href='./users/delete'"/>
+  </body>
+</html>

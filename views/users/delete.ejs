@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アカウント削除</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <a href = "logout">logout</a>
+    <a href = "/mypage">mypage</a>
+    <a href = "/todo/top">TOP</a>
+    <h1>アカウント削除</h1>
+    <form action="" method="post">
+        <div>
+            <label>ユーザー名：</label>
+            <input type="text" name="username" required/>
+        </div>
+        <div>
+            <label>パスワード：</label>
+            <input type="password" name="password" required/>
+        </div>
+        <div>
+            <input type="submit" value="削除"/>
+        </div>
+        <div><%= error %></div>
+    </form>
+</body>
+</html>
